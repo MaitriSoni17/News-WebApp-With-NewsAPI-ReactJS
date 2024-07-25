@@ -138,7 +138,7 @@ export class News extends Component {
         
         <div className="container mt-5 mb-3 d-flex justify-content-center">
           <div className="search-container row w-100 ms-5 rounded-2 ">
-            <i class="bi bi-search col-md-1 fs-5 d-flex justify-content-center align-items-center rounded-2 border-0"></i>
+            <i className="bi bi-search col-md-1 fs-5 d-flex justify-content-center align-items-center rounded-2 border-0"></i>
             <input type="search" onChange={(e) => this.setState({ search: e.target.value })} className="form-control col w-50 rounded-2 ms-0 search border-0" placeholder="Search News" />
           </div>
           <Select value={{ value: country, label: options.find((option) => option.value === country).label }} onChange={this.handleChange} options={options} className="col-md-3 ms-5 w-25" />

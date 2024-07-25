@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import React, { Component } from 'react'
+import Form from './Components/form';
 
 export class App extends Component {
   
@@ -43,6 +44,7 @@ export class App extends Component {
             <Route exact path="/science" element={<News setProgress={this.setProgress} key="science" pageSize={10} apiKey={this.apiKey} category="science" />} />
             <Route exact path="/sports" element={<News setProgress={this.setProgress} key="sports" pageSize={10} apiKey={this.apiKey} category="sports" />} />
             <Route exact path="/technology" element={<News setProgress={this.setProgress} key="technology" pageSize={10} apiKey={this.apiKey} category="technology" />} />
+            <Route exact path="/form" element={<Form/>} />
           </Routes>
 
         </Router>

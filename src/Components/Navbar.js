@@ -72,6 +72,9 @@ export class Navbar extends Component {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/technology">Technology</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/form">Form</Link>
+                            </li>
                         </ul>
                         <div className="navbar-text d-flex date">
                             <Link className="nav-link me-3 date text-secondary-emphasis fw-medium">{this.state.time}</Link>
